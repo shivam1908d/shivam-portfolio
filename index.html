@@ -4,8 +4,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shivam | Frontend Developer</title>
+    <meta name="description" content="Frontend developer building fast, responsive interfaces with HTML, CSS, JavaScript and Bootstrap.">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <div class="glow" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-md fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Shivam Dubey<span>.</span></a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Toggle menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto align-items-md-center gap-md-1">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#journey">Journey</a></li>
+          <li class="nav-item ms-md-3"><a class="btn btn-main btn-sm" href="#contact">Hire me</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="home">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="status"><i></i> Open to frontend roles</span>
+          <h1>I build interfaces people enjoy using.</h1>
+          <p class="lead-text">Hi, I'm Your Name, a frontend developer. I turn designs into fast, responsive, accessible websites.</p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="#projects" class="btn btn-main">See my work</a>
+            <a href="assets/resume.pdf" class="btn btn-ghost" download>Download resume</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="code-win">
+            <div class="code-bar"><b></b><b></b><b></b><span>developer.js</span></div>
+<pre class="code"><span class="l"><em>const</em> <u>developer</u> = {</span>
+<span class="l">  name: <s>"Shivam Dubey"</s>,</span>
+<span class="l">  role: <s>"Frontend Developer"</s>,</span>
+<span class="l">  stack: [<s>"Angular"</s>, <s>"Tailwind CSS"</s>, <s>"Bootstrap"</s>, <br>          <s>"JavaScript"</s>, <s>"TypeScript"</s>],</span>
+<span class="l">  location: <s>"Varanasi, India"</s>,</span>
+<span class="l">  openToWork: <em>true</em></span>
+<span class="l">};</span>
+<span class="l caret"> </span></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4 reveal"><h2 class="sec-title">About</h2></div>
+        <div class="col-lg-8 reveal">
+          <p class="big">I care about the details users notice without knowing why: smooth spacing, quick load times and layouts that feel right on every screen.</p>
+          <p>Write 2 or 3 honest sentences here: what you studied, what you've built, and what kind of team you want to join.</p>
+          <div class="row g-3 mt-2 facts">
+            <div class="col-6 col-md-4"><strong>Based in</strong>Varanasi, India</div>
+            <div class="col-6 col-md-4"><strong>Focus</strong>Responsive UI</div>
+            <div class="col-12 col-md-4"><strong>Email</strong>you@email.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="sec-title reveal">Skills</h2>
+      <div class="row g-4">
+        <div class="col-md-6 reveal">
+          <div class="panel">
+            <h3>Core</h3>
+            <p>What I build every page with.</p>
+            <div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript ES6+</span><span>Semantic markup</span><span>DOM manipulation</span></div>
+          </div>
+        </div>
+        <div class="col-md-6 reveal">
+          <div class="panel">
+            <h3>Layout &amp; Styling</h3>
+            <p>How I make pages look right on any device.</p>
+            <div class="tags"><span>Bootstrap 5</span><span>Flexbox</span><span>CSS Grid</span><span>Responsive design</span><span>CSS animations</span></div>
+          </div>
+        </div>
+        <div class="col-md-6 reveal">
+          <div class="panel">
+            <h3>Working with data</h3>
+            <p>Connecting pages to real services.</p>
+            <div class="tags"><span>Fetch API</span><span>REST APIs</span><span>JSON</span><span>localStorage</span><span>Async / Await</span></div>
+          </div>
+        </div>
+        <div class="col-md-6 reveal">
+          <div class="panel">
+            <h3>Tools &amp; Practice</h3>
+            <p>How I work and ship.</p>
+            <div class="tags"><span>Git &amp; GitHub</span><span>VS Code</span><span>Chrome DevTools</span><span>Figma to code</span><span>Accessibility basics</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="sec-title reveal">Selected projects</h2>
+
+      <article class="proj row align-items-center g-4 reveal">
+        <div class="col-lg-7"><div class="browser"><div class="bar"><b></b><b></b><b></b></div><div class="shot" style="--a:#8b7bff;--b:#3ee0c5">Weather App</div></div></div>
+        <div class="col-lg-5">
+          <h3>Weather App</h3>
+          <p>Live weather for any city using a public API, with clear loading and error states.</p>
+          <div class="tags sm"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span></div>
+          <div class="plinks"><a href="#" target="_blank" rel="noopener">Live demo</a><a href="#" target="_blank" rel="noopener">Source code</a></div>
+        </div>
+      </article>
+
+      <article class="proj row align-items-center g-4 flip reveal">
+        <div class="col-lg-7"><div class="browser"><div class="bar"><b></b><b></b><b></b></div><div class="shot" style="--a:#ff8f70;--b:#8b7bff">Task Manager</div></div></div>
+        <div class="col-lg-5">
+          <h3>Task Manager</h3>
+          <p>Add, edit, filter and delete tasks. Data is saved in the browser so it survives a refresh.</p>
+          <div class="tags sm"><span>JavaScript</span><span>Bootstrap</span><span>localStorage</span></div>
+          <div class="plinks"><a href="#" target="_blank" rel="noopener">Live demo</a><a href="#" target="_blank" rel="noopener">Source code</a></div>
+        </div>
+      </article>
+
+      <article class="proj row align-items-center g-4 reveal">
+        <div class="col-lg-7"><div class="browser"><div class="bar"><b></b><b></b><b></b></div><div class="shot" style="--a:#3ee0c5;--b:#4f7cff">Landing Page</div></div></div>
+        <div class="col-lg-5">
+          <h3>Landing Page</h3>
+          <p>A mobile-first marketing page built from a Figma design, tested on phone, tablet and desktop.</p>
+          <div class="tags sm"><span>HTML</span><span>CSS</span><span>Bootstrap</span></div>
+          <div class="plinks"><a href="#" target="_blank" rel="noopener">Live demo</a><a href="#" target="_blank" rel="noopener">Source code</a></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- JOURNEY -->
+  <section id="journey">
+    <div class="container">
+      <h2 class="sec-title reveal">Journey</h2>
+      <div class="timeline">
+        <div class="t-item reveal"><small>2024 - Present</small><h3>Frontend Developer (self-driven)</h3><p>Built responsive sites and small web apps. Say what you learned and shipped.</p></div>
+        <div class="t-item reveal"><small>2020 - 2024</small><h3>Your Degree, Your College</h3><p>Add your course and any relevant subjects or achievements.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="cta reveal">
+        <h2>Let's build something good together.</h2>
+        <p>I'm looking for a frontend role where I can learn fast and ship real work.</p>
+        <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+          <a class="btn btn-main" href="mailto:you@email.com">you@email.com</a>
+          <a class="btn btn-ghost" href="https://github.com/yourname" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-ghost" href="https://linkedin.com/in/yourname" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer><div class="container">&copy; <span id="year"></span> Your Name. Built with HTML, CSS, JavaScript and Bootstrap.</div></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
