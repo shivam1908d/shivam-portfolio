@@ -122,3 +122,11 @@ footer{border-top:1px solid var(--line);padding:1.6rem 0;color:var(--muted);font
   .reveal,.code .l{opacity:1;transform:none}
   html{scroll-behavior:auto}
 }
+
+.shot-img{
+  display:block;
+  width:100%;
+  aspect-ratio:16/10;
+  object-fit:cover;
+  object-position:top;
+}
